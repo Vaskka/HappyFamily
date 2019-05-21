@@ -1,7 +1,6 @@
 package com.rlja.mp.happyfamily.service;
 
 import com.rlja.mp.happyfamily.dao.HelloRepository;
-import com.rlja.mp.happyfamily.entity.HelloEntity;
 import com.rlja.mp.happyfamily.utils.Util;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
