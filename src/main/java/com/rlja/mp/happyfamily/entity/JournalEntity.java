@@ -1,5 +1,6 @@
 package com.rlja.mp.happyfamily.entity;
 
+import com.rlja.mp.happyfamily.entity.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
@@ -16,10 +17,15 @@ import java.sql.Timestamp;
 @Document(collection = "journal")
 @AllArgsConstructor
 @ToString
-public class JournalEntity {
+public class JournalEntity extends BaseEntity {
 
     @Id
     private String journalId;
+
+    /**
+     * 创建的家庭成员
+     */
+    private MemberEntity memberCreator;
 
     /**
      * 日志内容（考虑前端富文本输入转html，渲染再利用html渲染插件）

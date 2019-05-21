@@ -27,11 +27,6 @@ public class QuestionEntity extends BaseEntity {
     private String content;
 
     /**
-     * 所属家庭组
-     */
-    private GroupEntity referGroup;
-
-    /**
      * 创建者
      */
     private MemberEntity sender;

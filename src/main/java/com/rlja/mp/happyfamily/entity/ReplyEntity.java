@@ -34,5 +34,10 @@ public class ReplyEntity extends BaseEntity {
      * 接受者
      */
     private MemberEntity receiver;
+
+    /**
+     * 想要回复的reply实体id，如果回复的是Question实体（例如第一条回复），则此字段为固定字符串"FIRST"
+     */
+    private String wantToReplyId;
 }
 

@@ -45,6 +45,10 @@ public class GroupEntity extends BaseEntity {
      */
     private List<PictureSetEntity> pictureSets;
 
+    /**
+     * 家庭备忘录
+     */
+    private List<NoteEntity> notes;
 
     /**
      * 纪念日列表（创建每个组需要初始化生日在这个list中）
@@ -55,5 +59,9 @@ public class GroupEntity extends BaseEntity {
      * 家庭日志
      */
     private List<JournalEntity> journals;
-    
+
+    /**
+     * 家庭成员提问回复（贴吧的设计，QuestionEntity为一个实体，内部包含一组成员之间的回复再提问再回复）
+     */
+    private List<QuestionEntity> questionEntities;
 }

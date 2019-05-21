@@ -1,5 +1,6 @@
 package com.rlja.mp.happyfamily.entity;
 
+import com.rlja.mp.happyfamily.entity.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,7 +16,7 @@ import org.springframework.data.annotation.Id;
 @Document(collection = "picture")
 @AllArgsConstructor
 @ToString
-public class PictureEntity {
+public class PictureEntity extends BaseEntity {
 
     /**
      * 照片id
